@@ -33,6 +33,8 @@ function miniMaxSum($arr) {
         array_splice( $arr, $i, 0, $value );
     }
 
+    $max = $newArr[0];
+    $min = $newArr[0];
     for($i = 0; $i < count($newArr); $i++)
     {
         if($newArr[$i] > $max)
@@ -40,7 +42,6 @@ function miniMaxSum($arr) {
             $max = $newArr[$i];
         }
 
-        $min = $newArr[0];
         if($newArr[$i] < $min)
         {
             $min = $newArr[$i];
@@ -55,5 +56,5 @@ function miniMaxSum($arr) {
 // $arr_temp = rtrim(fgets(STDIN));
 
 // $arr = array_map('intval', preg_split('/ /', $arr_temp, -1, PREG_SPLIT_NO_EMPTY));
-$arr = [1,2,3,4,5];
+$arr = [501893267,649027153,379408215,452968170,487530619];
 miniMaxSum($arr);
