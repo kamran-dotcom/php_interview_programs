@@ -9,6 +9,17 @@
 function miniMaxSum($arr) {
     // Write your code here
     $len = count($arr);
+    $min = 0;
+    $max = 0;
+    for($i = 0; $i < $len; $i++)
+    {
+        array_splice($arr, $i, 1);
+        $sum = 0;
+        for($j = 0; $j < count($arr); $j++)
+        {
+
+        }
+    }
 
 }
 
